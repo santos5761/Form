@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #ccc;
+  background-image: url("https://th.bing.com/th/id/R.18c230152aa608e6bf05e3d26a1b7c11?rik=Of0cudosWbLfQQ&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f107987-digital_art-minimalism-cube-cross-Halo_Reach.jpg&ehk=IB1hWQWTpO7u%2ffysXgcn1Cls%2frBDhJvrczTrtcWHrH4%3d&risl=&pid=ImgRaw&r=0");
+}
+
+img {
+  background-color: black;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.container {
+  background-color: #eee;
+  width: 30rem;
+  height: 40rem;
+  margin: auto;
+  display: flex;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+form h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.3rem auto;
+  color: #6ac0e8;
+}
+
+form label {
+  color: black;
+  display: block;
+  font-size: 1.4rem;
+  margin: 0 0 0 5rem;
+}
+
+form input {
+  width: 20rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #6ac0e8;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+
+::placeholder {
+  color: grey;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form input[type="submit"] {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 0;
+  margin: 2rem auto;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #6ac0e8;
+  color: #f3f3f3;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3259ac;
+}
